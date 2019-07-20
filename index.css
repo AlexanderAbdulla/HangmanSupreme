@@ -1,0 +1,17 @@
+#winnerText {
+    display: none;
+    text-align: center;
+}
+
+
+#strikes{
+    display: block;
+}
+
+#userWord{
+    display: block;
+}
+
+#nextWordBtn{
+    opacity: 0.3;
+}

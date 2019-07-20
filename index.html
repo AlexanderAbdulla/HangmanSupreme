@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<meta charset="UTF-8">
+<title>Hangman</title>
+<link rel="stylesheet" type="text/css" href="index.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="Models/hangmanModel.js" defer></script>
+<script src="Views/hangmanView.js" defer></script>
+<script src="Controllers/hangmanController.js" defer></script>
+<script>
+    
+</script>
+</head>
+<body>
+
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="height: 100%">
+    <h1 id="gameTitle" class="display-4">Hangman SUPREME 2</h1>
+    <h3 id="score">Score: 0</h3>
+    <p id="hint">Hint/ Definition: lorem ipsum</p>
+    <h1 id="gameWord"></h1>
+    <p>Letters Guessed</p>
+    <p id="playedLetters" style ="height: 1.5em"></p>
+    <p id="strikes">5 lives left</p>
+    <p id="hiddenDiv"></p>
+    <div id="buttonDiv">
+    <br>
+    <button id="a" onclick="letterEntered(this.id)" class="btn-lg">a</button>
+    <button id="b" onclick="letterEntered(this.id)"class="btn-lg">b</button>
+    <button id="c" onclick="letterEntered(this.id)"class="btn-lg">c</button>
+    <button id="d" onclick="letterEntered(this.id)"class="btn-lg">d</button>
+    <button id="e" onclick="letterEntered(this.id)"class="btn-lg">e</button>
+    <button id="f" onclick="letterEntered(this.id)"class="btn-lg">f</button>
+    <button id="g" onclick="letterEntered(this.id)"class="btn-lg">g</button>
+    <br>
+    <br>
+    <button id="h" onclick="letterEntered(this.id)"class="btn-lg">h</button>
+    <button id="i" onclick="letterEntered(this.id)"class="btn-lg">i</button>
+    <button id="j" onclick="letterEntered(this.id)"class="btn-lg">j</button>
+    <button id="k" onclick="letterEntered(this.id)"class="btn-lg">k</button>
+    <button id="l" onclick="letterEntered(this.id)"class="btn-lg">l</button>
+    <button id="m" onclick="letterEntered(this.id)"class="btn-lg">m</button>
+    <button id="n" onclick="letterEntered(this.id)"class="btn-lg">n</button>
+    <br>
+    <br>
+    <button id="o" onclick="letterEntered(this.id)"class="btn-lg">o</button>
+    <button id="p" onclick="letterEntered(this.id)"class="btn-lg">p</button>
+    <button id="q" onclick="letterEntered(this.id)"class="btn-lg">q</button>
+    <button id="r" onclick="letterEntered(this.id)"class="btn-lg">r</button>
+    <button id="s" onclick="letterEntered(this.id)"class="btn-lg">s</button>
+    <button id="t" onclick="letterEntered(this.id)"class="btn-lg">t</button>
+    <button id="u" onclick="letterEntered(this.id)"class="btn-lg">u</button>
+    <br>
+    <br>
+    <button id="v" onclick="letterEntered(this.id)"class="btn-lg">v</button>
+    <button id="w" onclick="letterEntered(this.id)"class="btn-lg">w</button>
+    <button id="x" onclick="letterEntered(this.id)"class="btn-lg">x</button>
+    <button id="y" onclick="letterEntered(this.id)"class="btn-lg">y</button>
+    <button id="z" onclick="letterEntered(this.id)"class="btn-lg">z</button>
+    <button id="-" onclick="letterEntered(this.id)"class="btn-lg">-</button>
+    <br>
+    <br>
+    </div>
+    <button id ="playAgainBtn2" class="btn-danger center span5 btn-lg" onclick="playAgain()">Play Again</button>
+    <br>
+    <br>
+    <!--<button id="nextWordBtn" class="btn-success center span5 btn-lg" onclick="newWord()" disabled="true">NEXT WORD</button>-->
+</div>
+
+</body>
+</html>
