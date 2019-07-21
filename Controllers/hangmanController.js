@@ -6,17 +6,18 @@ var hangmanGameModel = new hangmanGameModel()
 
 // Get our full list    
 $.getJSON("dictionary.json", function(json) {
-        // console.log(json); // this will show the info it in firebug console
          var definitions = Object.values(json);
          var words = Object.keys(json);
          // Picking the random word and definition from the list
          var randomNum = (Math.random()* words.length) | 0;    
          word = words[randomNum];
+         word = word.trim();
          definition = definitions[randomNum];
          if(definition.length > 10) {
              definition.slice(0, 10);
              definition = definition + "...";
     };
+    console.log("Answer is: " + word);
       hangmanGameModel.setWord(word, definition);
       hangmanGameModel.addWordToView();
       hangmanGameModel.addDefinitionToView();
