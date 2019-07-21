@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/e94cec57-fa03-4524-9eb9-ea344c13eb7c/resourceGroups/appsvc_rg_windows_centralus/providers/Microsoft.Web/sites/HangmanSupreme",
-    "appService.deploySubpath": ""
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/e94cec57-fa03-4524-9eb9-ea344c13eb7c/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/HangmanSupreme"
 }

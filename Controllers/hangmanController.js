@@ -3,6 +3,7 @@ var word;
 var definition;
 //Make an empty hangmanmodel
 var hangmanGameModel = new hangmanGameModel()
+
 // Get our full list    
 $.getJSON("dictionary.json", function(json) {
         // console.log(json); // this will show the info it in firebug console
@@ -22,6 +23,7 @@ $.getJSON("dictionary.json", function(json) {
 }
 );
 
+console.log('outside the fx');
 
 //Define what happens when a letter is entered 
 function letterEntered(val) {
