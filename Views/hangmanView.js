@@ -85,7 +85,7 @@ function winningView(){
 
 //Sets the scoreboard
 function setScore(score){
-    document.getElementById("score").innerHTML = "Score: " + score;
+    //document.getElementById("score").innerHTML = "Score: " + score;
 }
 
 //Sets the gameword

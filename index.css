@@ -18,4 +18,11 @@
 
 .hidden {
     display: none;
+    display: block;
+}
+
+@media screen and (max-width: 400px) {
+    .btn-lg {
+        padding: 10px !important;
+    }
 }

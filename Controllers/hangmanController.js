@@ -25,8 +25,6 @@ $.getJSON("dictionary.json", function(json) {
 }
 );
 
-console.log('outside the fx');
-
 //Define what happens when a letter is entered 
 function letterEntered(val) {
         document.getElementById(val).disabled = true; 
