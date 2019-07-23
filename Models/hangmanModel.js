@@ -129,6 +129,12 @@ function hangmanGameModel(){
             resetViews();
         });
     }
+    
+    // Remove spinner and show hidden div
+    this.endLoading = function() {
+        document.getElementById('spinner').classList.add("invisible");
+        document.getElementById('loadedInfo').classList.remove('hidden');
+    }
 }
 
 

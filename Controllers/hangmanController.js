@@ -17,7 +17,8 @@ $.getJSON("dictionary.json", function(json) {
              definition.slice(0, 10);
              definition = definition + "...";
     };
-    console.log("Answer is: " + word);
+      console.log("Answer is: " + word);
+      hangmanGameModel.endLoading();
       hangmanGameModel.setWord(word, definition);
       hangmanGameModel.addWordToView();
       hangmanGameModel.addDefinitionToView();

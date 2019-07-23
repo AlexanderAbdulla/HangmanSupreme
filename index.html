@@ -6,7 +6,9 @@
 <title>Hangman</title>
 <link rel="stylesheet" type="text/css" href="index.css"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="Models/hangmanModel.js" defer></script>
 <script src="Views/hangmanView.js" defer></script>
 <script src="Controllers/hangmanController.js" defer></script>
@@ -19,11 +21,16 @@
 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="height: 100%">
     <h1 id="gameTitle" class="display-4">Hangman SUPREME</h1>
     <h3 id="score">Score: 0</h3>
-    <p id="hint">Hint/ Definition: lorem ipsum</p>
-    <h1 id="gameWord"></h1>
-    <p>Letters Guessed</p>
-    <p id="playedLetters" style ="height: 1.5em"></p>
-    <p id="strikes">5 lives left</p>
+    <div id="spinner" class="spinner-border m-3 text-primary" role="status">
+        <span id="spinnerSpan" class="sr-only">Loading...</span>
+    </div>
+    <div id="loadedInfo" class="hidden">
+        <p id="hint">Hint/ Definition: </p>
+        <h1 id="gameWord"></h1>
+        <p>Letters Guessed</p>
+        <p id="playedLetters" style ="height: 1.5em"></p>
+        <p id="strikes">5 lives left</p>
+        </div>
     <p id="hiddenDiv"></p>
     <div id="buttonDiv">
     <br>
